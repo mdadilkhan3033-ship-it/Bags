@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AUREA Bag — Modern Luxury Redefined</title>
+  <title>Lux Bags - Premium Collection</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
 
     body {
-      background-color: #faf8f4;
-      color: #333;
+      background-color: #0a0a0a;
+      color: #fff;
       overflow-x: hidden;
     }
 
@@ -22,42 +22,42 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 25px 10%;
+      padding: 25px 80px;
+      background: rgba(10, 10, 10, 0.8);
       position: fixed;
-      top: 0;
       width: 100%;
-      background: rgba(255, 255, 255, 0.9);
+      top: 0;
+      z-index: 100;
       backdrop-filter: blur(10px);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      z-index: 1000;
     }
 
     header h1 {
-      font-size: 1.8rem;
-      letter-spacing: 1px;
-      color: #b08b56;
-      font-weight: 600;
+      font-size: 1.8em;
+      letter-spacing: 2px;
+      font-weight: 700;
+      color: #c6a972;
     }
 
     nav a {
-      margin-left: 30px;
+      color: #fff;
       text-decoration: none;
-      color: #555;
+      margin: 0 20px;
+      font-size: 1em;
       transition: 0.3s;
     }
 
     nav a:hover {
-      color: #b08b56;
+      color: #c6a972;
     }
 
     .hero {
       height: 100vh;
-      background: url('https://images.unsplash.com/photo-1629382368136-d2e0bfbce9df?auto=format&fit=crop&w=1500&q=80') no-repeat center/cover;
+      background: url('https://images.unsplash.com/photo-1618354691404-6e63f5e2d4b8?auto=format&fit=crop&w=1900&q=80') center/cover no-repeat;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
       flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 100px;
       position: relative;
     }
 
@@ -66,203 +66,212 @@
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(255, 255, 255, 0.35);
+      background: rgba(0, 0, 0, 0.5);
     }
 
     .hero-content {
       position: relative;
-      z-index: 1;
-      max-width: 700px;
-      padding: 20px;
+      z-index: 2;
+      max-width: 600px;
     }
 
-    .hero-content h2 {
-      font-size: 3rem;
-      color: #2b2b2b;
-      margin-bottom: 15px;
-      letter-spacing: 1px;
-    }
-
-    .hero-content p {
-      font-size: 1.1rem;
-      color: #555;
-      margin-bottom: 30px;
-    }
-
-    .cta-btn {
-      padding: 12px 35px;
-      background: #b08b56;
+    .hero h2 {
+      font-size: 3em;
       color: #fff;
-      border: none;
-      border-radius: 50px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      cursor: pointer;
-      transition: all 0.3s;
+      line-height: 1.2;
     }
 
-    .cta-btn:hover {
-      background: #cba86f;
+    .hero p {
+      font-size: 1.2em;
+      margin: 20px 0 40px;
+      color: #ddd;
+    }
+
+    .btn {
+      background: #c6a972;
+      color: #0a0a0a;
+      padding: 15px 35px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #fff;
+      color: #000;
       transform: scale(1.05);
     }
 
     .section {
-      padding: 100px 10%;
+      padding: 100px 80px;
       text-align: center;
+      background: #111;
     }
 
     .section h3 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #b08b56;
-      font-weight: 600;
+      font-size: 2.2em;
+      margin-bottom: 40px;
+      color: #c6a972;
     }
 
-    .section p {
-      font-size: 1rem;
-      color: #666;
-      max-width: 700px;
-      margin: 0 auto 50px;
-      line-height: 1.7;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 30px;
     }
 
-    .product-card {
-      background: #fff;
+    .card {
+      background: #1b1b1b;
       border-radius: 20px;
       overflow: hidden;
-      transition: 0.3s;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      width: 300px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     }
 
-    .product-card:hover {
-      transform: translateY(-8px);
+    .card:hover {
+      transform: translateY(-10px);
     }
 
-    .product-card img {
+    .card img {
       width: 100%;
-      height: 260px;
+      height: 220px;
       object-fit: cover;
     }
 
-    .product-card h4 {
-      margin: 15px;
-      color: #b08b56;
-      font-size: 1.1rem;
+    .card-content {
+      padding: 20px;
+      text-align: left;
     }
 
-    .product-card p {
-      margin: 0 15px 20px;
-      color: #666;
-      font-size: 0.9rem;
+    .card-content h4 {
+      margin-bottom: 10px;
+      font-size: 1.3em;
+      color: #fff;
+    }
+
+    .card-content p {
+      font-size: 0.95em;
+      color: #bbb;
     }
 
     footer {
-      background: #fff;
-      padding: 40px 10%;
+      background: #0a0a0a;
       text-align: center;
-      color: #888;
-      font-size: 0.9rem;
-      border-top: 1px solid #eee;
+      padding: 40px;
+      font-size: 0.9em;
+      color: #999;
+      border-top: 1px solid #222;
     }
 
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 30px;
       }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
 
-    .fade-in {
-      opacity: 0;
-      animation: fadeInUp 1s forwards;
+      .hero {
+        padding-left: 30px;
+        align-items: center;
+        text-align: center;
+      }
+
+      .hero-content {
+        max-width: 90%;
+      }
+
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>AUREA</h1>
+    <h1>Lux Bags</h1>
     <nav>
-      <a href="#about">About</a>
+      <a href="#home">Home</a>
       <a href="#collection">Collection</a>
+      <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content fade-in">
-      <h2>The AUREA Bag</h2>
-      <p>Effortless beauty meets timeless craftsmanship — your new essential for modern elegance.</p>
-      <button class="cta-btn" onclick="scrollToSection('collection')">Explore the Collection</button>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Carry Elegance. Define Luxury.</h2>
+      <p>Discover premium handcrafted bags designed for timeless sophistication. Every stitch reflects excellence.</p>
+      <a href="#collection" class="btn">Explore Collection</a>
     </div>
   </section>
 
-  <section class="section" id="about">
-    <h3>Elevated Minimalism</h3>
-    <p>The AUREA Bag blends modern design with classic tones. Each piece is crafted from premium leather and tailored for those who value elegance without excess.</p>
-  </section>
-
-  <section class="section" id="collection">
-    <h3>The AUREA Collection</h3>
-    <div class="products">
-      <div class="product-card fade-in">
-        <img src="https://images.unsplash.com/photo-1603808033192-2cba6fa5a8f3?auto=format&fit=crop&w=800&q=80" alt="AUREA Tote">
-        <h4>AUREA Signature Tote</h4>
-        <p>Spacious luxury with a minimalist silhouette — a perfect blend of grace and purpose.</p>
+  <section id="collection" class="section">
+    <h3>Our Premium Collection</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1609947437690-9a7bdf272d5d?auto=format&fit=crop&w=800&q=80" alt="Classic Leather Bag">
+        <div class="card-content">
+          <h4>Classic Leather Bag</h4>
+          <p>Crafted from the finest Italian leather, built for elegance and endurance.</p>
+        </div>
       </div>
-      <div class="product-card fade-in">
-        <img src="https://images.unsplash.com/photo-1618354770974-1e86b8d77e33?auto=format&fit=crop&w=800&q=80" alt="AUREA Crossbody">
-        <h4>AUREA Crossbody</h4>
-        <p>Compact design crafted for daily wear — lightweight, sleek, and undeniably stylish.</p>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1602526206438-2b8c25f8c1f2?auto=format&fit=crop&w=800&q=80" alt="Travel Tote">
+        <div class="card-content">
+          <h4>Elite Travel Tote</h4>
+          <p>Spacious and sleek — perfect for those who travel with style and confidence.</p>
+        </div>
       </div>
-      <div class="product-card fade-in">
-        <img src="https://images.unsplash.com/photo-1618354693451-9e5efb3da45c?auto=format&fit=crop&w=800&q=80" alt="AUREA Mini">
-        <h4>AUREA Mini</h4>
-        <p>A chic statement piece for evenings — elegant texture meets subtle gold details.</p>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1622396482257-9bce0a5f3d6c?auto=format&fit=crop&w=800&q=80" alt="Designer Handbag">
+        <div class="card-content">
+          <h4>Designer Handbag</h4>
+          <p>Exquisite design that merges luxury and practicality for the modern lifestyle.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="contact">
-    <h3>Connect With AUREA</h3>
-    <p>Our luxury specialists are ready to assist you. For custom pieces or brand collaborations, get in touch today.</p>
-    <button class="cta-btn" onclick="window.location.href='mailto:contact@aureabag.com'">Contact Us</button>
+  <section id="about" class="section">
+    <h3>About Lux Bags</h3>
+    <p style="max-width:700px;margin:auto;color:#ccc;">
+      At Lux Bags, we believe true luxury lies in details. Each bag is meticulously crafted with precision and passion, using premium materials that embody sophistication. Our goal — to make elegance effortless.
+    </p>
+  </section>
+
+  <section id="contact" class="section">
+    <h3>Get in Touch</h3>
+    <p>Interested in our collection? Contact us for custom designs or exclusive offers.</p>
+    <a href="mailto:info@luxbags.com" class="btn" style="margin-top:20px;">Contact Us</a>
   </section>
 
   <footer>
-    © 2025 AUREA. All rights reserved.
+    © 2025 Lux Bags. All Rights Reserved.
   </footer>
 
   <script>
-    // Fade-in effect on scroll
-    const fadeElements = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.animationDelay = `${Math.random() * 0.3}s`;
-          entry.target.classList.add('visible');
-          entry.target.style.opacity = 1;
-        }
+    // Smooth scroll animation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
       });
-    }, { threshold: 0.2 });
+    });
 
-    fadeElements.forEach(el => observer.observe(el));
-
-    // Smooth scroll
-    function scrollToSection(id) {
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-    }
+    // Navbar background change on scroll
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.style.background = 'rgba(10,10,10,0.95)';
+      } else {
+        header.style.background = 'rgba(10,10,10,0.8)';
+      }
+    });
   </script>
 </body>
 </html>
-
 
