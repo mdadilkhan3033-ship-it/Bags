@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AUREA Bag — Redefining Luxury</title>
+  <title>AUREA Bag — Modern Luxury Redefined</title>
   <style>
     * {
       margin: 0;
@@ -13,8 +13,8 @@
     }
 
     body {
-      background-color: #0d0d0d;
-      color: #fff;
+      background-color: #faf8f4;
+      color: #333;
       overflow-x: hidden;
     }
 
@@ -26,26 +26,28 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background: rgba(10, 10, 10, 0.85);
+      background: rgba(255, 255, 255, 0.9);
       backdrop-filter: blur(10px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
       z-index: 1000;
     }
 
     header h1 {
       font-size: 1.8rem;
-      letter-spacing: 2px;
-      color: #d9b86b;
+      letter-spacing: 1px;
+      color: #b08b56;
+      font-weight: 600;
     }
 
     nav a {
       margin-left: 30px;
       text-decoration: none;
-      color: #aaa;
+      color: #555;
       transition: 0.3s;
     }
 
     nav a:hover {
-      color: #d9b86b;
+      color: #b08b56;
     }
 
     .hero {
@@ -64,7 +66,7 @@
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(255, 255, 255, 0.35);
     }
 
     .hero-content {
@@ -76,30 +78,32 @@
 
     .hero-content h2 {
       font-size: 3rem;
-      color: #d9b86b;
+      color: #2b2b2b;
       margin-bottom: 15px;
+      letter-spacing: 1px;
     }
 
     .hero-content p {
-      font-size: 1.2rem;
-      color: #ddd;
+      font-size: 1.1rem;
+      color: #555;
       margin-bottom: 30px;
     }
 
     .cta-btn {
       padding: 12px 35px;
-      background: #d9b86b;
-      color: #111;
+      background: #b08b56;
+      color: #fff;
       border: none;
       border-radius: 50px;
-      font-weight: bold;
+      font-weight: 600;
+      letter-spacing: 0.5px;
       cursor: pointer;
       transition: all 0.3s;
     }
 
     .cta-btn:hover {
+      background: #cba86f;
       transform: scale(1.05);
-      background: #f0ce85;
     }
 
     .section {
@@ -110,58 +114,61 @@
     .section h3 {
       font-size: 2rem;
       margin-bottom: 20px;
-      color: #d9b86b;
+      color: #b08b56;
+      font-weight: 600;
     }
 
     .section p {
       font-size: 1rem;
-      color: #aaa;
+      color: #666;
       max-width: 700px;
       margin: 0 auto 50px;
+      line-height: 1.7;
     }
 
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
       gap: 30px;
     }
 
     .product-card {
-      background: #1a1a1a;
+      background: #fff;
       border-radius: 20px;
       overflow: hidden;
       transition: 0.3s;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     }
 
     .product-card:hover {
-      transform: translateY(-10px);
+      transform: translateY(-8px);
     }
 
     .product-card img {
       width: 100%;
-      height: 250px;
+      height: 260px;
       object-fit: cover;
     }
 
     .product-card h4 {
       margin: 15px;
-      color: #d9b86b;
+      color: #b08b56;
+      font-size: 1.1rem;
     }
 
     .product-card p {
       margin: 0 15px 20px;
-      color: #ccc;
+      color: #666;
       font-size: 0.9rem;
     }
 
     footer {
-      background: #111;
+      background: #fff;
       padding: 40px 10%;
       text-align: center;
       color: #888;
       font-size: 0.9rem;
-      border-top: 1px solid #222;
+      border-top: 1px solid #eee;
     }
 
     @keyframes fadeInUp {
@@ -194,40 +201,40 @@
   <section class="hero">
     <div class="hero-content fade-in">
       <h2>The AUREA Bag</h2>
-      <p>Redefining luxury — designed for elegance, crafted for endurance, and made to turn every journey into a statement.</p>
-      <button class="cta-btn" onclick="scrollToSection('collection')">Discover More</button>
+      <p>Effortless beauty meets timeless craftsmanship — your new essential for modern elegance.</p>
+      <button class="cta-btn" onclick="scrollToSection('collection')">Explore the Collection</button>
     </div>
   </section>
 
   <section class="section" id="about">
-    <h3>Crafted Beyond Ordinary</h3>
-    <p>The AUREA Bag combines timeless design with premium craftsmanship. Hand-stitched from the finest leather, it’s built to accompany you through every moment in style.</p>
+    <h3>Elevated Minimalism</h3>
+    <p>The AUREA Bag blends modern design with classic tones. Each piece is crafted from premium leather and tailored for those who value elegance without excess.</p>
   </section>
 
   <section class="section" id="collection">
-    <h3>Explore AUREA Styles</h3>
+    <h3>The AUREA Collection</h3>
     <div class="products">
       <div class="product-card fade-in">
-        <img src="https://images.unsplash.com/photo-1603808033192-2cba6fa5a8f3?auto=format&fit=crop&w=800&q=80" alt="Classic AUREA">
-        <h4>AUREA Classic</h4>
-        <p>Iconic silhouette crafted from rich, full-grain leather — timeless sophistication.</p>
+        <img src="https://images.unsplash.com/photo-1603808033192-2cba6fa5a8f3?auto=format&fit=crop&w=800&q=80" alt="AUREA Tote">
+        <h4>AUREA Signature Tote</h4>
+        <p>Spacious luxury with a minimalist silhouette — a perfect blend of grace and purpose.</p>
       </div>
       <div class="product-card fade-in">
-        <img src="https://images.unsplash.com/photo-1618354770974-1e86b8d77e33?auto=format&fit=crop&w=800&q=80" alt="AUREA City Edition">
-        <h4>AUREA City Edition</h4>
-        <p>Designed for modern professionals — elegance meets functionality.</p>
+        <img src="https://images.unsplash.com/photo-1618354770974-1e86b8d77e33?auto=format&fit=crop&w=800&q=80" alt="AUREA Crossbody">
+        <h4>AUREA Crossbody</h4>
+        <p>Compact design crafted for daily wear — lightweight, sleek, and undeniably stylish.</p>
       </div>
       <div class="product-card fade-in">
-        <img src="https://images.unsplash.com/photo-1618354693451-9e5efb3da45c?auto=format&fit=crop&w=800&q=80" alt="AUREA Travel">
-        <h4>AUREA Travel</h4>
-        <p>Spacious design for effortless travel, featuring premium zippers and inner compartments.</p>
+        <img src="https://images.unsplash.com/photo-1618354693451-9e5efb3da45c?auto=format&fit=crop&w=800&q=80" alt="AUREA Mini">
+        <h4>AUREA Mini</h4>
+        <p>A chic statement piece for evenings — elegant texture meets subtle gold details.</p>
       </div>
     </div>
   </section>
 
   <section class="section" id="contact">
     <h3>Connect With AUREA</h3>
-    <p>For custom designs, collaborations, or inquiries — reach out to our luxury care team today.</p>
+    <p>Our luxury specialists are ready to assist you. For custom pieces or brand collaborations, get in touch today.</p>
     <button class="cta-btn" onclick="window.location.href='mailto:contact@aureabag.com'">Contact Us</button>
   </section>
 
@@ -257,4 +264,5 @@
   </script>
 </body>
 </html>
+
 
