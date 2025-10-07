@@ -13,7 +13,7 @@
     }
 
     body {
-      background-color: #0a0a0a;
+      background-color: #0d0d0d;
       color: #fff;
       overflow-x: hidden;
     }
@@ -23,19 +23,21 @@
       justify-content: space-between;
       align-items: center;
       padding: 25px 80px;
-      background: rgba(10, 10, 10, 0.8);
+      background: rgba(13, 13, 13, 0.85);
       position: fixed;
       width: 100%;
       top: 0;
       z-index: 100;
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(12px);
+      transition: background 0.3s ease;
+      border-bottom: 1px solid rgba(255, 0, 0, 0.15);
     }
 
     header h1 {
       font-size: 1.8em;
       letter-spacing: 2px;
       font-weight: 700;
-      color: #c6a972;
+      color: #e63946;
     }
 
     nav a {
@@ -47,12 +49,12 @@
     }
 
     nav a:hover {
-      color: #c6a972;
+      color: #e63946;
     }
 
     .hero {
       height: 100vh;
-      background: url('https://images.unsplash.com/photo-1618354691404-6e63f5e2d4b8?auto=format&fit=crop&w=1900&q=80') center/cover no-repeat;
+      background: url('https://images.unsplash.com/photo-1622396482257-9bce0a5f3d6c?auto=format&fit=crop&w=1900&q=80') center/cover no-repeat;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -66,7 +68,7 @@
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.6);
     }
 
     .hero-content {
@@ -79,6 +81,7 @@
       font-size: 3em;
       color: #fff;
       line-height: 1.2;
+      text-shadow: 0 0 10px rgba(230, 57, 70, 0.5);
     }
 
     .hero p {
@@ -88,19 +91,21 @@
     }
 
     .btn {
-      background: #c6a972;
-      color: #0a0a0a;
+      background: #e63946;
+      color: #fff;
       padding: 15px 35px;
       border-radius: 50px;
       text-decoration: none;
       font-weight: bold;
       transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(230, 57, 70, 0.5);
     }
 
     .btn:hover {
       background: #fff;
-      color: #000;
+      color: #e63946;
       transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(230, 57, 70, 0.7);
     }
 
     .section {
@@ -112,7 +117,7 @@
     .section h3 {
       font-size: 2.2em;
       margin-bottom: 40px;
-      color: #c6a972;
+      color: #e63946;
     }
 
     .cards {
@@ -123,16 +128,17 @@
     }
 
     .card {
-      background: #1b1b1b;
+      background: #1a1a1a;
       border-radius: 20px;
       overflow: hidden;
       width: 300px;
-      transition: transform 0.3s ease;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(230, 57, 70, 0.2);
     }
 
     .card:hover {
       transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(230, 57, 70, 0.3);
     }
 
     .card img {
@@ -158,12 +164,12 @@
     }
 
     footer {
-      background: #0a0a0a;
+      background: #0d0d0d;
       text-align: center;
       padding: 40px;
       font-size: 0.9em;
       color: #999;
-      border-top: 1px solid #222;
+      border-top: 1px solid rgba(230, 57, 70, 0.3);
     }
 
     @media (max-width: 768px) {
@@ -201,8 +207,8 @@
 
   <section id="home" class="hero">
     <div class="hero-content">
-      <h2>Carry Elegance. Define Luxury.</h2>
-      <p>Discover premium handcrafted bags designed for timeless sophistication. Every stitch reflects excellence.</p>
+      <h2>Redefine Luxury with Power & Passion</h2>
+      <p>Step into the world of Lux Bags — where bold design meets timeless elegance. Crafted for those who dare to stand out.</p>
       <a href="#collection" class="btn">Explore Collection</a>
     </div>
   </section>
@@ -213,22 +219,22 @@
       <div class="card">
         <img src="https://images.unsplash.com/photo-1609947437690-9a7bdf272d5d?auto=format&fit=crop&w=800&q=80" alt="Classic Leather Bag">
         <div class="card-content">
-          <h4>Classic Leather Bag</h4>
-          <p>Crafted from the finest Italian leather, built for elegance and endurance.</p>
+          <h4>Crimson Classic</h4>
+          <p>Bold and timeless — handcrafted with rich leather and passion for perfection.</p>
         </div>
       </div>
       <div class="card">
         <img src="https://images.unsplash.com/photo-1602526206438-2b8c25f8c1f2?auto=format&fit=crop&w=800&q=80" alt="Travel Tote">
         <div class="card-content">
-          <h4>Elite Travel Tote</h4>
-          <p>Spacious and sleek — perfect for those who travel with style and confidence.</p>
+          <h4>Scarlet Voyager</h4>
+          <p>Spacious, sleek, and sophisticated. Your ultimate travel companion.</p>
         </div>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1622396482257-9bce0a5f3d6c?auto=format&fit=crop&w=800&q=80" alt="Designer Handbag">
+        <img src="https://images.unsplash.com/photo-1618354691404-6e63f5e2d4b8?auto=format&fit=crop&w=800&q=80" alt="Designer Handbag">
         <div class="card-content">
-          <h4>Designer Handbag</h4>
-          <p>Exquisite design that merges luxury and practicality for the modern lifestyle.</p>
+          <h4>Ruby Signature</h4>
+          <p>An icon of refinement — crafted for those who value true elegance.</p>
         </div>
       </div>
     </div>
@@ -237,13 +243,13 @@
   <section id="about" class="section">
     <h3>About Lux Bags</h3>
     <p style="max-width:700px;margin:auto;color:#ccc;">
-      At Lux Bags, we believe true luxury lies in details. Each bag is meticulously crafted with precision and passion, using premium materials that embody sophistication. Our goal — to make elegance effortless.
+      Lux Bags is a symbol of bold luxury — merging artistry with attitude. Our creations embody power, precision, and prestige. Designed for the modern elite who live with passion and purpose.
     </p>
   </section>
 
   <section id="contact" class="section">
     <h3>Get in Touch</h3>
-    <p>Interested in our collection? Contact us for custom designs or exclusive offers.</p>
+    <p>Looking for exclusivity? Reach out to explore limited-edition collections or personalized designs.</p>
     <a href="mailto:info@luxbags.com" class="btn" style="margin-top:20px;">Contact Us</a>
   </section>
 
@@ -266,9 +272,9 @@
     window.addEventListener('scroll', () => {
       const header = document.querySelector('header');
       if (window.scrollY > 50) {
-        header.style.background = 'rgba(10,10,10,0.95)';
+        header.style.background = 'rgba(13,13,13,0.95)';
       } else {
-        header.style.background = 'rgba(10,10,10,0.8)';
+        header.style.background = 'rgba(13,13,13,0.85)';
       }
     });
   </script>
